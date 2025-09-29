@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music M | Музыкальный клиент для VK</title>
-    <!-- SEO Мета-теги -->
-    <meta name="description" content="Music M - бесплатный музыкальный клиент для VK Скачивание треков, плейлисты, поиск музыки для Windows.">
-    <meta name="keywords" content="music m, музыка vk, клиент vk, скачать музыку vk, vk музыка, windows музыка, бесплатный плеер, музыкальный клиент, vk audio, m music, макротос">
-    <meta name="author" content="MaKrotos">
-    <!-- Open Graph для соцсетей -->
-    <meta property="og:title" content="Music M - Музыкальный клиент для VK">
-    <meta property="og:description" content="Клиент для прослушивания музыки VK с продвинутыми функциями">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://makrotos.github.io/Music-M/">
-    <meta property="og:image" content="https://github.com/user-attachments/assets/6525ad2f-18c8-48c4-8605-ad68c118702a">
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Music M - Музыкальный клиент для VK">
-    <meta name="twitter:description" content="Клиент для прослушивания музыки VK">
-    <meta name="twitter:image" content="https://github.com/user-attachments/assets/6525ad2f-18c8-48c4-8605-ad68c118702a">
-    <!-- Дополнительные SEO теги -->
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#00f0ff">
-    <link rel="canonical" href="https://makrotos.github.io/Music-M/">
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music M | Музыкальный клиент для VK</title>
+        <!-- SEO Мета-теги -->
+        <meta name="description" content="Music M - бесплатный музыкальный клиент для VK с футуристичным интерфейсом. Скачивание треков, плейлисты, поиск музыки для Windows.">
+        <meta name="keywords" content="music m, музыка vk, клиент vk, скачать музыку vk, vk музыка, windows музыка, бесплатный плеер, музыкальный клиент, vk audio, m music, макротос">
+        <meta name="author" content="MaKrotos">
+        <!-- Open Graph для соцсетей -->
+        <meta property="og:title" content="Music M - Музыкальный клиент для VK">
+        <meta property="og:description" content="Клиент для прослушивания музыки VK с продвинутыми функциями">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://makrotos.github.io/Music-M/">
+        <meta property="og:image" content="https://github.com/user-attachments/assets/6525ad2f-18c8-48c4-8605-ad68c118702a">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Music M - Музыкальный клиент для VK">
+        <meta name="twitter:description" content="Клиент для прослушивания музыки VK">
+        <meta name="twitter:image" content="https://github.com/user-attachments/assets/6525ad2f-18c8-48c4-8605-ad68c118702a">
+        <!-- Дополнительные SEO теги -->
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#00f0ff">
+        <link rel="canonical" href="https://makrotos.github.io/Music-M/">
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -45,254 +45,257 @@
         "softwareVersion": "0.3.4.6",
         "downloadUrl": "https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-FULL.X86.exe"
     }
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="grid-bg"></div>
-    <div class="particles" id="particles"></div>
-    <div class="container">
-
-        <header>
-            <h1 class="logo">Music M - Музыкальный клиент VK для Windows</h1>
-            <p class="tagline">Скачать бесплатный плеер для прослушивания музыки ВКонтакте</p>
-            <div class="badges">
-                <div class="badge">
-                    <i class="fas fa-download"></i>
-                    Загрузок:
-                    <span id="downloads-count">10K+</span>
-                </div>
-                <div class="badge">
-                    <i class="fab fa-windows"></i>
-                    Windows
-                </div>
-                <div class="badge">
-                    <i class="fas fa-tag"></i>
-                    Версия:
-                    <span id="latest-version">0.3.4.6</span>
-                </div>
-                <div class="badge">
-                    <i class="fas fa-star"></i>
-                    Open Source
-                </div>
-            </div>
-            <div class="github-links">
-                <a href="https://github.com/MaKrotos/Music-M" class="github-link" target="_blank">
-                    <i class="fab fa-github"></i>
-                    Исходный код
-                </a>
-                <a href="https://github.com/MaKrotos/Music-M/releases" class="github-link" target="_blank">
-                    <i class="fas fa-download"></i>
-                    Все версии для скачивания
-                </a>
-                <a href="https://t.me/VK_M_creator" class="github-link" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    Наш TG канал
-                </a>
-            </div>
-        </header>
-        <section class="download-section">
-            <h2 class="download-title">Скачать установщик Music M для Windows</h2>
-            <div class="download-grid">
-                <div class="download-card">
-                    <div class="card-header">
-                        <div class="card-title">X64 - Полная версия</div>
-                        <div class="card-icon">
-                            <i class="fas fa-desktop"></i>
-                        </div>
-                    </div>
-                    <p class="card-desc">Подойдёт большинству, автоматическая установка библиотек. Просто качайте это, если не знаете что качать.</p>
-                    <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-FULL.X86.exe" class="btn" id="download-full-x64">
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="grid-bg"></div>
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <header>
+                <h1 class="logo">Music M - Музыкальный клиент VK для Windows</h1>
+                <p class="tagline">Скачать бесплатный плеер для прослушивания музыки ВКонтакте</p>
+                <div class="badges">
+                    <div class="badge">
                         <i class="fas fa-download"></i>
-                        Скачать
+                        Загрузок:
+                        <span id="downloads-count">10K+</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fab fa-windows"></i>
+                        Windows
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-tag"></i>
+                        Версия:
+                        <span id="latest-version">0.3.4.6</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-star"></i>
+                        <span id="stars-count">50</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-music"></i>
+                        Open Source
+                    </div>
+                </div>
+                <div class="github-links">
+                    <a href="https://github.com/MaKrotos/Music-M" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Исходный код
+                    </a>
+                    <a href="https://github.com/MaKrotos/Music-M/releases" class="github-link" target="_blank">
+                        <i class="fas fa-download"></i>
+                        Все версии для скачивания
+                    </a>
+                    <a href="https://t.me/VK_M_creator" class="github-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        Наш TG канал
                     </a>
                 </div>
-                <div class="download-card">
-                    <div class="card-header">
-                        <div class="card-title">X64 - Урезанная версия</div>
-                        <div class="card-icon">
-                            <i class="fas fa-compress-alt"></i>
+            </header>
+            <section class="download-section">
+                <h2 class="download-title">Скачать установщик Music M для Windows</h2>
+                <div class="download-grid">
+                    <div class="download-card">
+                        <div class="card-header">
+                            <div class="card-title">X64 - Полная версия</div>
+                            <div class="card-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                        </div>
+                        <p class="card-desc">Подойдёт большинству, автоматическая установка библиотек. Просто качайте это, если не знаете что качать.</p>
+                        <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-FULL.X86.exe" class="btn" id="download-full-x64">
+                            <i class="fas fa-download"></i>
+                            Скачать
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="card-header">
+                            <div class="card-title">X64 - Урезанная версия</div>
+                            <div class="card-icon">
+                                <i class="fas fa-compress-alt"></i>
+                            </div>
+                        </div>
+                        <p class="card-desc">Подойдёт большинству, придётся ручками ставить библиотеку .NET</p>
+                        <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-SLIM.X86.exe" class="btn" id="download-slim-x64">
+                            <i class="fas fa-download"></i>
+                            Скачать
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="card-header">
+                            <div class="card-title">ARM64 - Полная версия</div>
+                            <div class="card-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                        </div>
+                        <p class="card-desc">Подойдёт владельцам процессора ARM64, автоматическая установка библиотек</p>
+                        <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-FULL.ARM64.exe" class="btn" id="download-full-arm64">
+                            <i class="fas fa-download"></i>
+                            Скачать
+                        </a>
+                    </div>
+                    <div class="download-card">
+                        <div class="card-header">
+                            <div class="card-title">ARM64 - Урезанная версия</div>
+                            <div class="card-icon">
+                                <i class="fas fa-laptop"></i>
+                            </div>
+                        </div>
+                        <p class="card-desc">Подойдёт владельцам процессора ARM64, придётся ручками ставить библиотеку .NET</p>
+                        <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-SLIM.ARM64.exe" class="btn" id="download-slim-arm64">
+                            <i class="fas fa-download"></i>
+                            Скачать
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="feature-title">Возможности музыкального клиента Music M</h3>
+                    <ul class="feature-desc">
+                        <li>Скачивание треков</li>
+                        <li>Генерация плейлистов</li>
+                        <li>Полноценный поиск</li>
+                        <li>Удаление и архивирование аудиозаписей</li>
+                        <li>Мультиаккаунт</li>
+                        <li>Просмотр аудио из вложений</li>
+                        <li>Возможность поделиться треками</li>
+                        <li>Просмотр музыкальных видео</li>
+                    </ul>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3 class="feature-title">Чего нет?</h3>
+                    <ul class="feature-desc">
+                        <li>Реклама отсутствует</li>
+                        <li>Возможности взломать ВК нет</li>
+                        <li>Передача личных данных третьим лицам не производится</li>
+                        <li>Создания аккаунта вк без номера телефона</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="gallery">
+                <h2 class="section-title">СКРИНШОТЫ</h2>
+                <div class="carousel">
+                    <div class="carousel-inner" id="carouselInner">
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/6525ad2f-18c8-48c4-8605-ad68c118702a" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/89689566-7940-4dae-861f-4eae2fb8afd5" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/01517d19-ac6f-4add-a939-867486a76d50" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/ca2eae3c-443e-464d-a04e-eace7d4cba2b" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/db59c45b-9101-44aa-bfac-df29ec0d88f4" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/3a230857-c03a-4c80-828c-9710b6bde6ae" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/af681632-263c-438d-a138-e91975220fd3" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/3766499d-052d-435c-a673-808e8bfbc315" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/228499f9-a7d7-492a-ace6-5329b02e1bdb" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/7fb9122a-88ed-4042-96ae-288949a884b0" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/e98cbf79-a4a6-434c-b382-089c9abe7ffd" alt="Интерфейс Music M">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/user-attachments/assets/b859710a-fc2c-4ac0-865f-90d2cbe36816" alt="Интерфейс Music M">
                         </div>
                     </div>
-                    <p class="card-desc">Подойдёт большинству, придётся ручками ставить библиотеку .NET</p>
-                    <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-SLIM.X86.exe" class="btn" id="download-slim-x64">
-                        <i class="fas fa-download"></i>
-                        Скачать
+                    <div class="carousel-controls">
+                        <div class="carousel-dot active" data-index="0"></div>
+                        <div class="carousel-dot" data-index="1"></div>
+                        <div class="carousel-dot" data-index="2"></div>
+                        <div class="carousel-dot" data-index="3"></div>
+                        <div class="carousel-dot" data-index="4"></div>
+                        <div class="carousel-dot" data-index="5"></div>
+                        <div class="carousel-dot" data-index="6"></div>
+                        <div class="carousel-dot" data-index="7"></div>
+                        <div class="carousel-dot" data-index="8"></div>
+                        <div class="carousel-dot" data-index="9"></div>
+                        <div class="carousel-dot" data-index="10"></div>
+                        <div class="carousel-dot" data-index="11"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="history-section">
+                <h2 class="section-title">ИСТОРИЯ РАЗВИТИЯ</h2>
+                <div class="star-history">
+                    <a href="https://www.star-history.com/#MaKrotos/Music-M&Date" target="_blank">
+                        <picture>
+                            <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MaKrotos/Music-M&type=Date&theme=dark">
+                            <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MaKrotos/Music-M&type=Date&theme=dark">
+                            <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MaKrotos/Music-M&type=Date&theme=dark" style="width: 100%;">
+                        </picture>
                     </a>
                 </div>
-                <div class="download-card">
-                    <div class="card-header">
-                        <div class="card-title">ARM64 - Полная версия</div>
-                        <div class="card-icon">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                    </div>
-                    <p class="card-desc">Подойдёт владельцам процессора ARM64, автоматическая установка библиотек</p>
-                    <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-FULL.ARM64.exe" class="btn" id="download-full-arm64">
-                        <i class="fas fa-download"></i>
-                        Скачать
+            </section>
+            <section class="acknowledgment">
+                <h2 class="section-title">БЛАГОДАРНОСТИ</h2>
+                <p>
+                    Отдельная благодарность
+                    <a href="https://github.com/Fooxboy/MusicX-WPF" target="_blank">Fooxboy/MusicX-WPF</a>
+                </p>
+                <p>Много чего скопипасчено именно отсюда.</p>
+                <div class="telegram-channel">
+                    <p>Канал для обращений за технической поддержкой и об обновлениях:</p>
+                    <a href="https://t.me/VK_M_creator" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        t.me/VK_M_creator
                     </a>
                 </div>
-                <div class="download-card">
-                    <div class="card-header">
-                        <div class="card-title">ARM64 - Урезанная версия</div>
-                        <div class="card-icon">
-                            <i class="fas fa-laptop"></i>
-                        </div>
-                    </div>
-                    <p class="card-desc">Подойдёт владельцам процессора ARM64, придётся ручками ставить библиотеку .NET</p>
-                    <a href="https://github.com/MaKrotos/Music-M/releases/download/0.3.4.6/Setup-SLIM.ARM64.exe" class="btn" id="download-slim-arm64">
+            </section>
+            <footer>
+                <p>Music M | Абсолютно бесплатное приложение для прослушивания музыки VK</p>
+                <div class="github-links" style="margin-top: 20px;">
+                    <a
+                        href="https://github.com/MaKrotos/Music-M"
+                        class="github-link"
+                        target="_blank"
+                        style="font-size: 0.9rem;"
+                    >
+                        <i class="fab fa-github"></i>
+                        Исходный код
+                    </a>
+                    <a
+                        href="https://github.com/MaKrotos/Music-M/releases"
+                        class="github-link"
+                        target="_blank"
+                        style="font-size: 0.9rem;"
+                    >
                         <i class="fas fa-download"></i>
-                        Скачать
+                        Все версии для скачивания
+                    </a>
+                    <a href="https://t.me/VK_M_creator" class="github-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        Наш TG канал
                     </a>
                 </div>
-            </div>
-        </section>
-        <section class="features">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-music"></i>
-                </div>
-                <h3 class="feature-title">Возможности музыкального клиента Music M</h3>
-                <ul class="feature-desc">
-                    <li>Скачивание треков</li>
-                    <li>Генерация плейлистов</li>
-                    <li>Полноценный поиск</li>
-                    <li>Удаление и архивирование аудиозаписей</li>
-                    <li>Мультиаккаунт</li>
-                    <li>Просмотр аудио из вложений</li>
-                    <li>Возможность поделиться треками</li>
-                    <li>Просмотр музыкальных видео</li>
-                </ul>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-ban"></i>
-                </div>
-                <h3 class="feature-title">Чего нет?</h3>
-                <ul class="feature-desc">
-                    <li>Реклама отсутствует</li>
-                    <li>Возможности взломать ВК нет</li>
-                    <li>Передача личных данных третьим лицам не производится</li>
-                    <li>Создания аккаунта вк без номера телефона</li>
-                </ul>
-            </div>
-        </section>
-        <section class="gallery">
-            <h2 class="section-title">СКРИНШОТЫ</h2>
-            <div class="carousel">
-                <div class="carousel-inner" id="carouselInner">
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/6525ad2f-18c8-48c4-8605-ad68c118702a" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/89689566-7940-4dae-861f-4eae2fb8afd5" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/01517d19-ac6f-4add-a939-867486a76d50" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/ca2eae3c-443e-464d-a04e-eace7d4cba2b" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/db59c45b-9101-44aa-bfac-df29ec0d88f4" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/3a230857-c03a-4c80-828c-9710b6bde6ae" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/af681632-263c-438d-a138-e91975220fd3" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/3766499d-052d-435c-a673-808e8bfbc315" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/228499f9-a7d7-492a-ace6-5329b02e1bdb" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/7fb9122a-88ed-4042-96ae-288949a884b0" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/e98cbf79-a4a6-434c-b382-089c9abe7ffd" alt="Интерфейс Music M">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://github.com/user-attachments/assets/b859710a-fc2c-4ac0-865f-90d2cbe36816" alt="Интерфейс Music M">
-                    </div>
-                </div>
-                <div class="carousel-controls">
-                    <div class="carousel-dot active" data-index="0"></div>
-                    <div class="carousel-dot" data-index="1"></div>
-                    <div class="carousel-dot" data-index="2"></div>
-                    <div class="carousel-dot" data-index="3"></div>
-                    <div class="carousel-dot" data-index="4"></div>
-                    <div class="carousel-dot" data-index="5"></div>
-                    <div class="carousel-dot" data-index="6"></div>
-                    <div class="carousel-dot" data-index="7"></div>
-                    <div class="carousel-dot" data-index="8"></div>
-                    <div class="carousel-dot" data-index="9"></div>
-                    <div class="carousel-dot" data-index="10"></div>
-                    <div class="carousel-dot" data-index="11"></div>
-                </div>
-            </div>
-        </section>
-        <section class="history-section">
-            <h2 class="section-title">ИСТОРИЯ РАЗВИТИЯ</h2>
-            <div class="star-history">
-                <a href="https://www.star-history.com/#MaKrotos/Music-M&Date" target="_blank">
-                    <picture>
-                        <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=MaKrotos/Music-M&type=Date&theme=dark">
-                        <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=MaKrotos/Music-M&type=Date&theme=dark">
-                        <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=MaKrotos/Music-M&type=Date&theme=dark" style="width: 100%;">
-                    </picture>
-                </a>
-            </div>
-        </section>
-        <section class="acknowledgment">
-            <h2 class="section-title">БЛАГОДАРНОСТИ</h2>
-            <p>
-                Отдельная благодарность
-                <a href="https://github.com/Fooxboy/MusicX-WPF" target="_blank">Fooxboy/MusicX-WPF</a>
-            </p>
-            <p>Много чего скопипасчено именно отсюда.</p>
-            <div class="telegram-channel">
-                <p>Канал для обращений за технической поддержкой и об обновлениях:</p>
-                <a href="https://t.me/VK_M_creator" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    t.me/VK_M_creator
-                </a>
-            </div>
-        </section>
-        <footer>
-            <p>Music M | Абсолютно бесплатное приложение для прослушивания музыки VK</p>
-            <div class="github-links" style="margin-top: 20px;">
-                <a
-                    href="https://github.com/MaKrotos/Music-M"
-                    class="github-link"
-                    target="_blank"
-                    style="font-size: 0.9rem;"
-                >
-                    <i class="fab fa-github"></i>
-                    Исходный код
-                </a>
-                <a
-                    href="https://github.com/MaKrotos/Music-M/releases"
-                    class="github-link"
-                    target="_blank"
-                    style="font-size: 0.9rem;"
-                >
-                    <i class="fas fa-download"></i>
-                    Все версии для скачивания
-                </a>
-                <a href="https://t.me/VK_M_creator" class="github-link" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    Наш TG канал
-                </a>
-            </div>
-        </footer>
-    </div>
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+            </footer>
+        </div>
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
         (function(m,e,t,r,i,k,a){
             m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();
@@ -300,13 +303,13 @@
             k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
         })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=104294296', 'ym');
         ym(104294296, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
-    </script>
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/104294296" style="position:absolute; left:-9999px;" alt="">
-        </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-    <script src="main.js"></script>
-</body>
+        </script>
+        <noscript>
+            <div>
+                <img src="https://mc.yandex.ru/watch/104294296" style="position:absolute; left:-9999px;" alt="">
+            </div>
+        </noscript>
+        <!-- /Yandex.Metrika counter -->
+        <script src="main.js"></script>
+    </body>
 </html>

@@ -61,37 +61,71 @@ async function loadGitHubData() {
         githubDataCache.downloads;
       document.getElementById("latest-version").textContent =
         githubDataCache.version;
+      // Добавляем отображение звезд из кэша, если есть
+      if (githubDataCache.stars) {
+        document.getElementById("stars-count").textContent =
+          githubDataCache.stars;
+      }
       return;
     }
-    const releasesResponse = await fetch(
-      "https://api.github.com/repos/MaKrotos/Music-M/releases/latest"
-    );
-    const releaseData = await releasesResponse.json();
-    let latestVersion = "Unknown";
-    if (releaseData.tag_name) {
-      latestVersion = releaseData.tag_name;
-      document.getElementById("latest-version").textContent = latestVersion;
-      const downloadLinks = document.querySelectorAll('a.btn[id^="download-"]');
-      downloadLinks.forEach((link) => {
-        const currentHref = link.getAttribute("href");
-        const newHref = currentHref.replace(
-          /\/download\/[^/]+\//,
-          `/download/${releaseData.tag_name}/`
-        );
-        link.setAttribute("href", newHref);
-      });
-    }
+
+    document.getElementById("downloads-count").textContent = "...";
+
     let allReleases = [];
     let url =
       "https://api.github.com/repos/MaKrotos/Music-M/releases?per_page=100";
-    document.getElementById("downloads-count").textContent = "...";
+    let latestVersion = "Unknown";
+
+    // Получаем информацию о репозитории для количества звезд
+    const repoResponse = await fetch(
+      "https://api.github.com/repos/MaKrotos/Music-M"
+    );
+    if (!repoResponse.ok) {
+      throw new Error(`HTTP error! status: ${repoResponse.status}`);
+    }
+    const repoData = await repoResponse.json();
+    const starsCount = repoData.stargazers_count;
+
+    // Форматируем количество звезд
+    let formattedStars = "0";
+    if (starsCount >= 1000) {
+      formattedStars = (starsCount / 1000).toFixed(1) + "k";
+    } else {
+      formattedStars = starsCount.toString();
+    }
+
+    // Отображаем количество звезд
+    document.getElementById("stars-count").textContent = formattedStars;
+
     while (url) {
       const response = await fetch(url);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+
       const releases = await response.json();
       allReleases = allReleases.concat(releases);
+
+      // Получаем последнюю версию из первого набора релизов
+      if (releases.length > 0 && latestVersion === "Unknown") {
+        latestVersion = releases[0].tag_name || "Unknown";
+        document.getElementById("latest-version").textContent = latestVersion;
+
+        // Обновляем ссылки для скачивания
+        const downloadLinks = document.querySelectorAll(
+          'a.btn[id^="download-"]'
+        );
+        downloadLinks.forEach((link) => {
+          const currentHref = link.getAttribute("href");
+          const newHref = currentHref.replace(
+            /\/download\/[^/]+\//,
+            `/download/${latestVersion}/`
+          );
+          link.setAttribute("href", newHref);
+        });
+      }
+
+      // Обрабатываем пагинацию
       const linkHeader = response.headers.get("Link");
       url = null;
       if (linkHeader) {
@@ -102,6 +136,8 @@ async function loadGitHubData() {
         }
       }
     }
+
+    // Подсчитываем общее количество скачиваний
     let formattedCount = "0+";
     if (allReleases.length > 0) {
       let totalDownloads = 0;
@@ -110,6 +146,7 @@ async function loadGitHubData() {
           totalDownloads += asset.download_count;
         }
       }
+
       if (totalDownloads >= 1000000) {
         formattedCount = (totalDownloads / 1000000).toFixed(1) + "M+";
       } else if (totalDownloads >= 1000) {
@@ -118,12 +155,19 @@ async function loadGitHubData() {
         formattedCount = totalDownloads.toString() + "+";
       }
     }
+
     document.getElementById("downloads-count").textContent = formattedCount;
+
+    // Сохраняем в кэш
     githubDataCache.downloads = formattedCount;
     githubDataCache.version = latestVersion;
+    githubDataCache.stars = formattedStars;
     githubDataCache.timestamp = now;
   } catch (error) {
+    console.error("Error loading GitHub data:", error);
     document.getElementById("downloads-count").textContent = "20K+";
+    document.getElementById("latest-version").textContent = "v1.0.0";
+    document.getElementById("stars-count").textContent = "1.2k";
   }
 }
 document.addEventListener("DOMContentLoaded", function () {
