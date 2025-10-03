@@ -111,18 +111,7 @@ async function loadGitHubData() {
         latestVersion = releases[0].tag_name || "Unknown";
         document.getElementById("latest-version").textContent = latestVersion;
 
-        // Обновляем ссылки для скачивания
-        const downloadLinks = document.querySelectorAll(
-          'a.btn[id^="download-"]'
-        );
-        downloadLinks.forEach((link) => {
-          const currentHref = link.getAttribute("href");
-          const newHref = currentHref.replace(
-            /\/download\/[^/]+\//,
-            `/download/${latestVersion}/`
-          );
-          link.setAttribute("href", newHref);
-        });
+       
       }
 
       // Обрабатываем пагинацию
