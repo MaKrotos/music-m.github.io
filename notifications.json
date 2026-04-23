@@ -1,24 +1,64 @@
 [
   {
     "id": 3,
+    "type": "standard",
     "Header": "Поддержи проект на GitHub ⭐",
     "Message": "Если вам нравится приложение, пожалуйста, поставьте звезду на GitHub! Это поможет проекту стать заметнее для других пользователей.",
-    "links": [
+    "buttons": [
       {
-        "name": "Открыть репозиторий",
-        "url": "https://github.com/MaKrotos/Music-M"
+        "text": "Открыть репозиторий",
+        "action": "url",
+        "value": "https://github.com/MaKrotos/Music-M"
       }
     ]
   },
   {
     "id": 10,
+    "type": "standard",
     "Header": "Новости разработки 🛠️",
     "Message": "Хотите знать, что нового появится в VK M? Подписывайтесь на официальный канал с новостями и обновлениями проекта.",
-    "links": [
+    "buttons": [
       {
-        "name": "Подписаться",
-        "url": "https://t.me/VK_M_creator"
+        "text": "Подписаться",
+        "action": "url",
+        "value": "https://t.me/VK_M_creator"
       }
     ]
+  },
+  {
+    "id": 100,
+    "type": "survey",
+    "Header": "Как вы нашли приложение?",
+    "Message": "Помогите нам улучшить, расскажите, как вы узнали о VK UI3",
+    "buttons": [
+      {
+        "text": "Через друзей",
+        "action": "event",
+        "value": "friends"
+      },
+      {
+        "text": "В социальных сетях",
+        "action": "event",
+        "value": "social"
+      },
+      {
+        "text": "Поиск в интернете",
+        "action": "event",
+        "value": "search"
+      },
+      {
+        "text": "Рекомендация в магазине приложений",
+        "action": "event",
+        "value": "store"
+      }
+    ],
+    "input": {
+      "type": "text",
+      "placeholder": "Другой вариант (опишите)",
+      "required": false,
+      "maxLength": 500
+    },
+    "showUntilAnswered": true,
+    "dismissButton": "Не хочу отвечать"
   }
 ]
