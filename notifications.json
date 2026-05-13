@@ -60,5 +60,18 @@
     },
     "showUntilAnswered": true,
     "dismissButton": "Не хочу отвечать"
+  },
+  {
+    "id": 103,
+    "type": "standard",
+    "Header": "🚨 Важно: План переноса репозитория",
+    "Message": "Привет! В связи с возможной блокировкой GitHub я задумался о переносе кода VK M на платформу SourceCraft от Яндекса. Сейчас с ним разбираюсь. Прошу поставить оценочки, чтоб выбить VK M в топ по всем репозиториям. Пожалуйста ❤️",
+    "buttons": [
+      {
+        "text": "Поддержать на SourceCraft",
+        "action": "url",
+        "value": "https://sourcecraft.dev/makrotos/music-m"
+      }
+    ]
   }
 ]
