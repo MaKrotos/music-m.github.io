@@ -1,11 +1,11 @@
 [
   {
     "UserName": "Иван Иванов",
-    "UserAvatar": "https://download.steaminventoryhelper.com/images/skinrave/shared/2.jpg",
+    "UserAvatar": "https://github.com/user-attachments/assets/e98cbf79-a4a6-434c-b382-089c9abe7ffd",
     "Playlists": [
       {
         "Name": "Лучшее из 2000-х",
-        "Avatar": "https://example.com/covers/pl1.jpg",
+        "Avatar": "https://github.com/user-attachments/assets/e98cbf79-a4a6-434c-b382-089c9abe7ffd",
         "Type": "Playlist",
         "Url": "https://vk.com/audio?playlist=-123456_789"
       },
