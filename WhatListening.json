@@ -1,23 +1,23 @@
 [
   {
     "UserName": "Разработчик VK M",
-    "UserAvatar": "https://vkm.makrotos.ru/mkr/main.png",
+    "UserAvatar": "https://vkm.makrotos.ru/ListenImages/mkr/main.png",
     "Playlists": [
       {
         "Name": "Pyrokinesis",
-        "Avatar": "https://vkm.makrotos.ru/mkr/mzlff.png",
+        "Avatar": "https://vkm.makrotos.ru/ListenImages/mkr/mzlff.png",
         "Type": "Artist",
         "Url": "https://vk.ru/artist/4713720798134665611"
       },
       {
         "Name": "НТР",
-        "Avatar": "https://sun9-40.vkuserphoto.ru/s/v1/ig2/03L2xWCB-3Bl3mviG7Y2rtzEiOD5TeJbfOuqNKs--n0izYH-jBYxs_tg2zNNCUDizGm3brjLB9ZqEn5N1NCAB75e.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1216x1504&from=bu&u=xZhQU4GVnv_STZobueEIW25XuwlJBLPrqRgmJYODcCI&cs=1216x0",
+        "Avatar": "https://vkm.makrotos.ru/ListenImages/mkr/ntr.png",
         "Type": "Artist",
         "Url": "https://vk.ru/artist/3912721077961542295"
       },
       {
         "Name": "mzlff",
-        "Avatar": "https://sun9-40.vkuserphoto.ru/s/v1/ig2/03L2xWCB-3Bl3mviG7Y2rtzEiOD5TeJbfOuqNKs--n0izYH-jBYxs_tg2zNNCUDizGm3brjLB9ZqEn5N1NCAB75e.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1216x1504&from=bu&u=xZhQU4GVnv_STZobueEIW25XuwlJBLPrqRgmJYODcCI&cs=1216x0",
+        "Avatar": "https://vkm.makrotos.ru/ListenImages/mkr/pyro.png",
         "Type": "Artist",
         "Url": "https://vk.ru/artist/4209602748421279686"
       }
