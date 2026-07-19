@@ -29,36 +29,5 @@
         "Url": "https://github.com/MaKrotos"
       }
     ]
-  },
-  {
-    "UserName": "Разработчик VK M",
-    "UserAvatar": "https://sun9-40.vkuserphoto.ru/s/v1/ig2/03L2xWCB-3Bl3mviG7Y2rtzEiOD5TeJbfOuqNKs--n0izYH-jBYxs_tg2zNNCUDizGm3brjLB9ZqEn5N1NCAB75e.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1216x1504&from=bu&u=xZhQU4GVnv_STZobueEIW25XuwlJBLPrqRgmJYODcCI&cs=1216x0",
-    "Playlists": [
-      {
-        "Name": "Джаз для души",
-        "Avatar": "https://sun9-40.vkuserphoto.ru/s/v1/ig2/03L2xWCB-3Bl3mviG7Y2rtzEiOD5TeJbfOuqNKs--n0izYH-jBYxs_tg2zNNCUDizGm3brjLB9ZqEn5N1NCAB75e.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1216x1504&from=bu&u=xZhQU4GVnv_STZobueEIW25XuwlJBLPrqRgmJYODcCI&cs=1216x0",
-        "Type": "Playlist",
-        "Url": "https://vk.com/audio?playlist=-111222_333"
-      },
-      {
-        "Name": "Miles Davis",
-        "Avatar": "https://sun9-40.vkuserphoto.ru/s/v1/ig2/03L2xWCB-3Bl3mviG7Y2rtzEiOD5TeJbfOuqNKs--n0izYH-jBYxs_tg2zNNCUDizGm3brjLB9ZqEn5N1NCAB75e.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1216x1504&from=bu&u=xZhQU4GVnv_STZobueEIW25XuwlJBLPrqRgmJYODcCI&cs=1216x0",
-        "Type": "Artist",
-        "Url": "https://vk.com/artist/milesdavis"
-      },
-      {
-        "Name": "Kind of Blue",
-        "Avatar": "https://sun9-40.vkuserphoto.ru/s/v1/ig2/03L2xWCB-3Bl3mviG7Y2rtzEiOD5TeJbfOuqNKs--n0izYH-jBYxs_tg2zNNCUDizGm3brjLB9ZqEn5N1NCAB75e.jpg?quality=95&as=32x40,48x59,72x89,108x134,160x198,240x297,360x445,480x594,540x668,640x792,720x891,1080x1336,1216x1504&from=bu&u=xZhQU4GVnv_STZobueEIW25XuwlJBLPrqRgmJYODcCI&cs=1216x0",
-        "Type": "Album",
-        "Url": "https://vk.com/audio?album=-111222_444"
-      }
-    ],
-    "SocialLinks": [
-      {
-        "Name": "GitHub",
-        "LinkType": "GitHub",
-        "Url": "https://github.com/MaKrotos"
-      }
-    ]
   }
 ]
