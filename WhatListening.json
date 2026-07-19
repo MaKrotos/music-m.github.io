@@ -22,15 +22,18 @@
     "SocialLinks": [
       {
         "Name": "ВКонтакте",
-        "LinkType": "VK"
+        "LinkType": "VK",
+        "Url": "https://vk.com/ivanov"
       },
       {
         "Name": "Telegram",
-        "LinkType": "Telegram"
+        "LinkType": "Telegram",
+        "Url": "https://t.me/ivanov"
       },
       {
         "Name": "Discord",
-        "LinkType": "Discord"
+        "LinkType": "Discord",
+        "Url": "https://discord.gg/ivanov"
       }
     ]
   },
@@ -57,11 +60,13 @@
     "SocialLinks": [
       {
         "Name": "GitHub",
-        "LinkType": "GitHub"
+        "LinkType": "GitHub",
+        "Url": "https://github.com/mariapetrova"
       },
       {
         "Name": "Twitter",
-        "LinkType": "Twitter"
+        "LinkType": "Twitter",
+        "Url": "https://twitter.com/mariapetrova"
       }
     ]
   }
