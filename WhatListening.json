@@ -22,7 +22,13 @@
         "Url": "https://vk.com/audio?playlist=-654321_987"
       }
     ],
-    "SocialLinks": []
+    "SocialLinks": [
+      {
+        "Name": "GitHub",
+        "LinkType": "GitHub",
+        "Url": "https://github.com/MaKrotos"
+      }
+    ]
   },
   {
     "UserName": "Разработчик VK M",
@@ -47,6 +53,12 @@
         "Url": "https://vk.com/audio?album=-111222_444"
       }
     ],
-    "SocialLinks": []
+    "SocialLinks": [
+      {
+        "Name": "GitHub",
+        "LinkType": "GitHub",
+        "Url": "https://github.com/MaKrotos"
+      }
+    ]
   }
 ]
