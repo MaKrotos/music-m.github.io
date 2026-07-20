@@ -31,7 +31,7 @@
     ]
   },
   {
-    "UserName": "Белый Мурлыка",
+    "UserName": "Белый Мурылыка",
     "UserAvatar": "https://vkm.makrotos.ru/ListenImages/murlik/mains.png",
     "Playlists": [
       {
@@ -53,6 +53,12 @@
         "Url": "https://vk.ru/artist/6303735522565166728"
       }
     ],
-    "SocialLinks": []
+    "SocialLinks": [
+      {
+        "Name": "Telegram",
+        "LinkType": "Telegram",
+        "Url": "https://t.me/tvoimyrilka"
+      }
+    ]
   }
 ]
