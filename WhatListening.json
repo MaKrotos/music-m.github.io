@@ -29,5 +29,30 @@
         "Url": "https://github.com/MaKrotos"
       }
     ]
+  },
+  {
+    "UserName": "Белый Мурлыка",
+    "UserAvatar": "https://vkm.makrotos.ru/ListenImages/murlik/main.png",
+    "Playlists": [
+      {
+        "Name": "Пламенев",
+        "Avatar": "https://vkm.makrotos.ru/ListenImages/murlik/plamenev.png",
+        "Type": "Artist",
+        "Url": "https://vk.ru/artist/plamenev"
+      },
+      {
+        "Name": "Арктида",
+        "Avatar": "https://vkm.makrotos.ru/ListenImages/murlik/arktida.png",
+        "Type": "Artist",
+        "Url": "https://vk.ru/artist/arktida"
+      },
+      {
+        "Name": "Сны саламандры",
+        "Avatar": "https://vkm.makrotos.ru/ListenImages/murlik/sni.png",
+        "Type": "Artist",
+        "Url": "https://vk.ru/artist/6303735522565166728"
+      }
+    ],
+    "SocialLinks": []
   }
 ]
